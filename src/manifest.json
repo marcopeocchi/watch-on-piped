@@ -1,0 +1,20 @@
+{
+  "name": "Watch on piped",
+  "description": "easily watch any youtube video on piped",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "background/index.js"
+      ]
+    }
+  ]
+}
