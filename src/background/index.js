@@ -30,11 +30,12 @@ const run = () => {
 }
 
 const observe = () => {
-  let oldHref = document.location.href;
-  const body = document.querySelector("body");
+  let oldHref = document.location.href
+  const body = document.querySelector('body')
+
   const observer = new MutationObserver(() => {
     if (oldHref !== document.location.href) {
-      oldHref = document.location.href;
+      oldHref = document.location.href
       const e = document.getElementById(ID)
       if (e) {
         e.href = getLocation()
@@ -43,6 +44,7 @@ const observe = () => {
       run()
     }
   })
+
   observer.observe(body, { childList: true, subtree: true })
 }
 

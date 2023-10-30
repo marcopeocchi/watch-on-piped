@@ -1,15 +1,16 @@
 {
   "name": "watch-on-piped",
   "version": "1.0.0",
-  "description": "",
+  "description": "easily watch any youtube video on piped",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
     "build": "gulp"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "marcopeocchi",
+  "homepage": "https://github.com/marcopeocchi/watch-on-piped",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
