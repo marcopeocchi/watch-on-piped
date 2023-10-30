@@ -16,7 +16,6 @@ const transpile = () => gulp.src('src/**/*.js')
   }))
   .pipe(gulp.dest('./dist/'))
 
-
 const build = () => gulp
   .src([
     'src/**/*.png',
@@ -25,6 +24,5 @@ const build = () => gulp
     'src/manifest*.json'
   ])
   .pipe(gulp.dest('./dist/'));
-
 
 export default gulp.series(clean, transpile, build)
